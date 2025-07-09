@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Honk&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rubik+Bubbles&display=swap');
 
 body.game {
-  background-image: url(background.gif);
+  background-image: url(/images/background.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
