@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Honk&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rubik+Bubbles&display=swap');
+
+
+body {
+    background-color: lightblue;
+    font-family: "Honk", sans-serif;
+    text-align: center;
+    padding: 250px;
+    font-size: 50px;
+}
+
+    a {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}

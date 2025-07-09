@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta charset="UTF-8">
+  <title>Spaceman</title>
+  <link rel="stylesheet" href="/css/game.css" />
+  
+  
+</head>
+<body class="game">
+  <h1>Spaceman</h1>
+  <h2>Basketball Edition</h2>
+  <div class="word" id="wordDisplay"></div>
+  <p>Wrong guesses: <span id="wrongLetters" class="wrong"></span></p>
+  <p>Guess a letter:</p>
+  <input type="text" id="letterInput" maxlength="1" />
+  <button onclick="guessLetter()">Guess</button>
+  <p id="result"></p>
+
+  <script src="/js/spaceman.js"></script>
+</body>
+</html>
+<p id="result"></p>
+<button onclick="resetGame()">Play Again</button>
+
+<div id="spaceman">
+  <img class="part" src="/images/head.png" alt="head">
+  <img class="part" src="/images/body.png" alt="body">
+  <img class="part" src="/images/left arm.png" alt="left arm">
+  <img class="part" src="/images/right arm.png" alt="right arm">
+  <img class="part" src="/images/left leg.png" alt="left leg">
+  <img class="part" src="/images/right leg.png" alt="right leg">
+</div>
+  <button onclick="window.location.href='home.html'">Back to Home</button>
+  <button onclick="window.location.href='instructions.html'">Instructions</button>
+  </nav>
+</body>
