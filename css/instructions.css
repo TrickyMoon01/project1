@@ -4,13 +4,14 @@ body {
     background-color: lightblue;
     font-family: system-ui, sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-body h1 {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  color: black;
+button {
+    width: 8%;
+    position: relative;
+    left: 46%;
 }

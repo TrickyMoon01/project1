@@ -5,8 +5,10 @@ body {
     background-color: lightblue;
     font-family: "Honk", sans-serif;
     text-align: center;
-    padding: 250px;
+    padding: 185px;
     font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
     a {
@@ -14,4 +16,16 @@ body {
     text-align: center;
     padding: 10px;
     color: black;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
