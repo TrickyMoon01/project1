@@ -5,79 +5,6 @@
   <meta charset="UTF-8">
   <title>Spaceman</title>
   <link rel="stylesheet" href="spaceman.css" />
-  <style>
-    body { font-family: Arial; text-align: center; padding: 0px; }
-    .word { font-size: 35px; letter-spacing: 2px; }
-    .wrong { color: red; }
-  </style>
-  <style>
-#hangmanFigure {
-  position: relative;
-  width: 120px;
-  height: 200px;
-  margin: 20px auto;
-}
-
-.gallow {
-  width: 4px;
-  height: 200px;
-  background: #333;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.part {
-  display: none;
-  position: absolute;
-  background: #000;
-}
-
-.head {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.body {
-  width: 4px;
-  height: 60px;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.left-arm {
-  width: 40px;
-  height: 4px;
-  top: 80px;
-  left: calc(50% - 40px);
-}
-
-.right-arm {
-  width: 40px;
-  height: 4px;
-  top: 80px;
-  left: 50%;
-}
-
-.left-leg {
-  width: 30px;
-  height: 4px;
-  top: 120px;
-  left: calc(50% - 30px);
-}
-
-.right-leg {
-  width: 30px;
-  height: 4px;
-  top: 120px;
-  left: 50%;
-}
-</style>
   
 </head>
 <body>
@@ -97,7 +24,6 @@
 <button onclick="resetGame()">Play Again</button>
 
 <div id="hangmanFigure">
-  <div class="gallow"></div>
   <div class="head part"></div>
   <div class="body part"></div>
   <div class="left-arm part"></div>
