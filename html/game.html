@@ -5,10 +5,26 @@
   <meta charset="UTF-8">
   <title>Spaceman</title>
   <link rel="stylesheet" href="/css/game.css" />
-  
-  
+  <style type=""text/css">
+  nav#nav1{ margin-top: 24px;}
+  nav#nav1 > a{
+    background: white;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+  nav#nav1 > a:hover{ background: #BBEA00; }
+  nav#nav1 > a:active{ background: #EEFFA8; }
+  </style>
+  <script>
+    var bleep = new Audio();
+    bleep.src = "/audio/click.mp3";
+  </script>
 </head>
 <body class="game">
+
   <h1>Spaceman</h1>
   <h2>Basketball Edition</h2>
   <div class="word" id="wordDisplay"></div>
@@ -32,7 +48,16 @@
   <img class="part" src="/images/left leg.png" alt="left leg">
   <img class="part" src="/images/right leg.png" alt="right leg">
 </div>
-  <button onclick="window.location.href='home.html'">Back to Home</button>
-  <button onclick="window.location.href='instructions.html'">Instructions</button>
+  <nav id="nav1">
+    <a href="/html/home.html" onmousedown="bleep.play()">Back to Home</a>
+    <a href="/html/instructions.html" onmousedown="bleep.play()">Instructions</a>
   </nav>
+
+<audio id="bg-music" src="/audio/audio.mp3" loop></audio>
+
+<div id="volume-control">
+  <label for="volumeRange">🎵 Music Volume:</label>
+  <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="0.5">
+</div>
+
 </body>

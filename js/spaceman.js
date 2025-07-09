@@ -69,3 +69,26 @@ function updateHangmanFigure() {
     part.style.display = index < wrong.length ? "block" : "none";
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bgMusic = document.getElementById("bg-music");
+  const volumeSlider = document.getElementById("volumeRange");
+
+  if (!bgMusic || !volumeSlider) {
+    console.warn("Missing audio or volume slider element.");
+    return;
+  }
+
+  bgMusic.volume = volumeSlider.value;
+
+  document.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play().catch(err => console.warn("Playback blocked:", err));
+    }
+  }, { once: true });
+
+  volumeSlider.addEventListener("input", () => {
+    bgMusic.volume = volumeSlider.value;
+  });
+});
+

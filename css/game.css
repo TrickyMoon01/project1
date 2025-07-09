@@ -8,7 +8,7 @@ body.game {
   background-size: cover;
   font-family: system-ui, sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 225px;
 }
 
 body h1 {
@@ -53,3 +53,15 @@ body {
   
 .wrong { 
   color: red; }
+
+#volume-control {
+  margin: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+#volumeRange {
+  width: 100px;
+}
+

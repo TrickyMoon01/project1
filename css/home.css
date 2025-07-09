@@ -24,8 +24,16 @@ body {
     justify-content: space-evenly;
 }
 
-.nav-links {
+.nav1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+body {
+    background-image: url(/images/background2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
