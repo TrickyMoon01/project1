@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
   <title>Spaceman</title>
-  <link rel="stylesheet" href="spaceman.css" />
-  
+  <link rel="stylesheet" href="/css/home.css" />
+  <style type=""text/css">
+  nav#nav1{ margin-top: 24px;}
+  nav#nav1 > a{
+    background: #B9E1FF;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Arial Black", sans-serif;
+  }
+  nav#nav1 > a:hover{ background: #BBEA00; }
+  nav#nav1 > a:active{ background: #EEFFA8; }
+  </style>
+  <script>
+    var bleep = new Audio();
+    bleep.src = "/audio/click.mp3";
+  </script>
 </head>
 <body class="home">
   <h1>Spaceman</h1>
@@ -18,8 +34,11 @@
 </div>
 
 <body>
-  <nav class="nav-links">
-    <a href="/html/game.html">Play</a>
-    <a href="/html/instructions.html">Instructions</a>
+  <nav id="nav1">
+    <a href="/html/game.html" onmousedown="bleep.play()">Play</a>
+    <a href="/html/instructions.html" onmousedown="bleep.play()">Instructions</a>
   </nav>
+    
+<audio id="backgroundmusic" src="/audio/audio.mp3" autoplay loop></audio>
+
 </body>
