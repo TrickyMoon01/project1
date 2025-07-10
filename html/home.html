@@ -3,6 +3,7 @@
 <head>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spaceman</title>
   <link rel="stylesheet" href="/css/home.css" />
   <style type="text/css">
@@ -21,6 +22,12 @@
   <script>
     var bleep = new Audio();
     bleep.src = "/audio/click.mp3";
+    document.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("backgroundmusic");
+    if (music) {
+    music.volume = 0.25;
+  }
+});
   </script>
 </head>
 <body class="home">
@@ -39,6 +46,6 @@
     <a href="/html/instructions.html" onmousedown="bleep.play()">Instructions</a>
   </nav>
     
-<audio id="backgroundmusic" src="/audio/audio.mp3" autoplay loop></audio>
+<audio id="backgroundmusic" src="/audio/home-background.mp3" autoplay loop></audio>
 
 </body>

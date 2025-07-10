@@ -91,4 +91,3 @@ document.addEventListener("DOMContentLoaded", () => {
     bgMusic.volume = volumeSlider.value;
   });
 });
-

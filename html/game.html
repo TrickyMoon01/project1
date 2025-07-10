@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="./html/images/favicon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spaceman</title>
-  <link rel="stylesheet" href="./html/css/game.css" />
+  <link rel="stylesheet" href="/css/game.css" />
   <style type="text/css">
   nav#nav1{ margin-top: 24px;}
   nav#nav1 > a{
@@ -13,7 +14,7 @@
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "Arial Black", sans-serif;
   }
   nav#nav1 > a:hover{ background: #BBEA00; }
   nav#nav1 > a:active{ background: #EEFFA8; }
@@ -31,14 +32,14 @@
   <p>Wrong guesses: <span id="wrongLetters" class="wrong"></span></p>
   <p>Guess a letter:</p>
   <input type="text" id="letterInput" maxlength="1" />
-  <button onclick="guessLetter()">Guess</button>
+  <button onclick="guessLetter()" href="/html/home.html" onmousedown="bleep.play()">Guess</button>
   <p id="result"></p>
 
   <script src="/js/spaceman.js"></script>
 </body>
 </html>
 <p id="result"></p>
-<button onclick="resetGame()">Play Again</button>
+<button onclick="resetGame()" href="/html/home.html" onmousedown="bleep.play()">Play Again</button>
 
 <div id="spaceman">
   <img class="part" src="/images/head.png" alt="head">
@@ -49,11 +50,11 @@
   <img class="part" src="/images/right leg.png" alt="right leg">
 </div>
   <nav id="nav1">
-    <a href="./html/html/home.html" onmousedown="bleep.play()">Back to Home</a>
-    <a href="./html/html/instructions.html" onmousedown="bleep.play()">Instructions</a>
+    <a href="/html/home.html" onmousedown="bleep.play()">Back to Home</a>
+    <a href="/html/instructions.html" onmousedown="bleep.play()">Instructions</a>
   </nav>
 
-<audio id="bg-music" src="/audio/audio.mp3" loop></audio>
+<audio id="bg-music" src="/audio/game-background.mp3" loop></audio>
 
 <div id="volume-control">
   <label for="volumeRange">🎵 Music Volume:</label>

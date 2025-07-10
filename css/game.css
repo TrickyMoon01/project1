@@ -8,7 +8,7 @@ body.game {
   background-size: cover;
   font-family: system-ui, sans-serif;
   text-align: center;
-  padding: 225px;
+  padding: 180px;
 }
 
 body h1 {
@@ -34,13 +34,9 @@ body p {
   color: white;
 }
 
-body.wordDisplay {
-  color: white;
-}
-
 .part {
   display: none;
-  width: 100px;
+  width: 40px;
   margin: 5px auto;
 }
 
@@ -49,19 +45,28 @@ body {
 }
 
 .word { 
-  font-size: 35px; letter-spacing: 2px; }
+  font-size: 50px; letter-spacing: -3px; 
+  color: rgb(0, 220, 255);
+}
   
 .wrong { 
   color: red; }
 
 #volume-control {
-  margin: 300px;
+  margin: -570px;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
   color: white;
+  margin-left: 0.3%;
+  position: absolute;
+  left: 87%;
 }
+
 #volumeRange {
   width: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2px;
 }
 
